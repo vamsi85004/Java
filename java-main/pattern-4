@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class pattern4
+{
+public static void main(String[] args)
+{
+Scanner input=new Scanner(System.in);
+char c=input.next().charAt(0);
+int n=input.nextInt();
+for(int i=1;i<=n;i++)
+{
+for(int j=1;j<=i;j++)
+{
+System.out.print(c);
+}
+System.out.println();
+}
+}
+}
+
+output:
+ooad@ooad-Lenovo-S510:~/Desktop$ javac pattern4.java
+ooad@ooad-Lenovo-S510:~/Desktop$ java pattern4
+%
+3
+%
+%%
+%%%

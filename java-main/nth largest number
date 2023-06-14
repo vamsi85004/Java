@@ -1,0 +1,20 @@
+import java.util.Scanner;
+import java.util.Arrays;
+public class nthlargest
+{
+public static void main(String[] args)
+{
+Scanner input = new Scanner(System.in);
+int a[] = {14, 67, 48, 23, 5, 62};
+int len = a.length;
+Arrays.sort(a);
+int N = 4;
+System.out.println(N + " Largest number: " + a[len-N]);
+}
+}
+
+
+OUTPUT:
+ooad@ooad-Lenovo-S510:~/Desktop$ javac nthlargest.java
+ooad@ooad-Lenovo-S510:~/Desktop$ java nthlargest
+4 Largest number: 23

@@ -1,0 +1,49 @@
+import java.util.Scanner;
+public class duplicate
+{
+public static void main(String[] args)
+{
+Scanner input=new Scanner(System.in);
+System.out.print("Enter the number of elements: ");
+int n=input.nextInt();
+int a[]=new int[n];
+for(int i=0;i<n;i++)
+{
+System.out.print("Enter element: ");
+a[i]=input.nextInt();
+}
+for(int i=0;i<n;i++)
+{
+for(int j=i+1;j<n;j++)
+{
+if(a[i]==a[j])
+{
+for(int k=j;k<n-1;k++)
+{
+a[k]=a[k+1];
+}
+j--;
+n--;
+}
+}
+}
+for(int i=0;i<n;i++)
+{
+System.out.print(a[i]+" ");
+}
+}
+}
+
+
+OUTPUT:
+ooad@ooad-Lenovo-S510:~/Desktop$ javac duplicate.java
+ooad@ooad-Lenovo-S510:~/Desktop$ java duplicate
+Enter the number of elements: 7
+Enter element: 10
+Enter element: 20
+Enter element: 20
+Enter element: 30
+Enter element: 40
+Enter element: 40
+Enter element: 50
+10 20 30 40 50 

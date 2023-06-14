@@ -1,0 +1,40 @@
+import java.util.*;
+import java.util.Scanner;
+class rectangle
+{
+public static void main(String[] args)
+{
+int rows,columns,i,j;
+Scanner a=new Scanner(System.in);
+Scanner b=new Scanner(System.in);
+System.out.println("Enter the number of rows:");
+int r=a.nextInt();
+System.out.println("Enter the number of columns:");
+int c=a.nextInt();
+System.out.println("Enter the symbol:");
+String s=b.nextLine();
+for(i=1;i<=r;i++)
+{
+for(j=1;j<=c;j++)
+{
+System.out.print(s+"");
+}
+System.out.print("\n");
+}
+}
+}
+
+output:
+ooad@ooad-Lenovo-S510:~/Desktop$ javac rectangle.java
+ooad@ooad-Lenovo-S510:~/Desktop$ java rectangle
+Enter the number of rows:
+5
+Enter the number of columns:
+4
+Enter the symbol:
+^
+^^^^
+^^^^
+^^^^
+^^^^
+^^^^

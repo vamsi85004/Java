@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class skipping
+{
+public static void main(String[] args) 
+{
+Scanner input = new Scanner(System.in);
+int m=input.nextInt();
+int n=input.nextInt();
+int k=input.nextInt();
+for(int i=m;i<=n;i=i+k+1)
+{
+System.out.print(i+" ");
+}
+}
+}
+
+
+OUTPUT:
+ooad@ooad-Lenovo-S510:~/Desktop$ javac skipping.java
+ooad@ooad-Lenovo-S510:~/Desktop$ java skipping
+50
+100
+7
+50 58 66 74 82 90 98

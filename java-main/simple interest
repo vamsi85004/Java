@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class simpleinterest
+{
+ public static void main(String[] args) 
+{
+ Scanner sc=new Scanner(System.in);
+ float P=sc.nextFloat();
+ float R=sc.nextFloat();
+ float T=sc.nextFloat();
+ float SI = (P * T * R) / 100;
+ System.out.println("Simple interest = " + SI);
+ }
+}
+
+
+OUTPUT:
+ooad@ooad-Lenovo-S510:~/Desktop$ javac simpleinterest.java
+ooad@ooad-Lenovo-S510:~/Desktop$ java simpleinterest
+200000
+3
+10
+Simple interest = 60000.0

@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class username
+{
+public static void main(String[] args)
+{
+Scanner input=new Scanner(System.in);
+String s1=input.nextLine();
+String s2=input.nextLine();
+if(s1==s2)
+System.out.print("user name valid");
+else
+System.out.print("user name Invalid");
+}
+}
+
+
+OUTPUT:
+ooad@ooad-Lenovo-S510:~$ cd Desktop
+ooad@ooad-Lenovo-S510:~/Desktop$ javac username.java
+ooad@ooad-Lenovo-S510:~/Desktop$ java username
+Saveetha@789
+Saveetha@123
+user name Invalid

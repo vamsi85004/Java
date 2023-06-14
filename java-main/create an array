@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class array {
+public static void main(String[] args)
+{
+Scanner input=new Scanner(System.in);
+int lower=input.nextInt();
+int upper= input.nextInt();
+for(int i=lower;i<=upper;i++)
+{
+System.out.println("("+i+","+(i*i)+")"+" ");
+}
+}
+}
+
+OUTPUT:
+ooad@ooad-Lenovo-S510:~/Desktop$ javac array.java
+ooad@ooad-Lenovo-S510:~/Desktop$ java array
+45
+49
+(45,2025) 
+(46,2116) 
+(47,2209) 
+(48,2304) 
+(49,2401) 

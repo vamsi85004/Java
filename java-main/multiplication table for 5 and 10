@@ -1,0 +1,54 @@
+import java.util.Scanner;
+class A extends Thread
+{
+public void run()
+{
+int n=10;
+for(int i=1;i<=n;i++)
+{
+System.out.println(n+" X "+i+" = "+(n*i));
+}
+}
+}
+class B extends Thread
+{
+public void run()
+{
+int n=10;
+for(int i=1;i<=n;i++)
+{
+System.out.println(n+" X "+i+" = "+(n*i));
+}
+}
+}
+public class multiplicationtable
+{
+public static void main(String[] args)
+{
+Scanner input=new Scanner(System.in);
+A threadA=new A();
+B threadB=new B();
+threadA.start();
+threadB.start();
+}
+}
+
+
+OUTPUT:
+ooad@ooad-Lenovo-S510:~/Desktop$ javac multiplicationtable.java
+ooad@ooad-Lenovo-S510:~/Desktop$ java multiplicationtable
+5 X 1 = 5
+10 X 1 = 10
+5 X 2 = 10
+10 X 2 = 20
+10 X 3 = 30
+10 X 4 = 40
+10 X 5 = 50
+10 X 6 = 60
+5 X 3 = 15
+5 X 4 = 20
+5 X 5 = 25
+10 X 7 = 70
+10 X 8 = 80
+10 X 9 = 90
+10 X 10 = 100

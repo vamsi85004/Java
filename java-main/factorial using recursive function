@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class factusingrecurse
+{
+public static void main(String[] args)
+{
+Scanner input=new Scanner(System.in);
+int n=input.nextInt();
+int fact=1;
+for(int i=1;i<=n;i++)
+{
+fact=fact*i;
+}
+System.out.println("The factorial of "+n+" is: "+fact);
+}
+}
+
+
+OUTPUT:
+ooad@ooad-Lenovo-S510:~/Desktop$ javac factusingrecurse.java
+ooad@ooad-Lenovo-S510:~/Desktop$ java factusingrecurse
+6
+The factorial of 6 is: 720

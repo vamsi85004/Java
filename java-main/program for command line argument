@@ -1,0 +1,9 @@
+import java.util.Scanner;
+    class CommandLineExample{  
+    public static void main(String args[]){  
+    System.out.println("Your first argument is: "+args[0]);  
+    }  
+    }  
+    
+    OUTPUT:
+    Your first argument is: sonoo
